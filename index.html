@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Accordion</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>jQuery Accordion</h1>
+        </header>
+
+        <main>
+            <h1>Usage</h1>
+<pre>
+    $('.accordion__container').accordion({
+        activeClass: '_is_active',
+        accordionTrigger: '.accordion__title',
+        accordionContent: '.accordion__content'
+    });
+</pre>
+
+            <h1>Demo</h1>
+            <div class="accordion__container">
+                <div class="accordion__item">
+                    <header class="accordion__title">
+                        <h2>Suscipit eros</h2>
+                    </header>
+                    <section class="accordion__content">
+                        <p> Aenean id rutrum mi. Proin molestie nibh porttitor enim facilisis sagittis. Etiam turpis ante, elementum vel lacinia nec, semper id mauris. Sed bibendum, quam ac aliquam cursus, mi quam dapibus elit, vitae eleifend arcu sapien sit amet tellus. Integer tempor lorem sit amet egestas commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu ligula ligula. Nunc eros arcu, pellentesque quis mollis vel, aliquet aliquam orci. Curabitur blandit libero quis lobortis tempus. Nam bibendum lectus id quam consectetur fermentum. Integer fringilla sapien ac dolor dapibus tincidunt. Integer commodo dictum mauris a vestibulum. </p>
+                    </section>
+                </div>
+                <div class="accordion__item">
+                    <header class="accordion__title">
+                        <h2>Duis lacinia</h2>
+                    </header>
+                    <section class="accordion__content">
+                        <p> Quisque vitae ante posuere, varius massa at, condimentum urna. Praesent pretium rutrum commodo. Curabitur mollis lobortis diam, sit amet rutrum nisl maximus non. Suspendisse cursus orci a aliquam dapibus. Sed eget suscipit sapien. Sed elementum euismod neque eget molestie. Vestibulum sed velit iaculis nibh egestas egestas et molestie ligula. Nullam varius vulputate elementum. </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

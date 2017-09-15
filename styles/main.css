@@ -1,0 +1,34 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*
+    Accordion
+*/
+.accordion__item {
+    border: 1px solid #ccc;
+    margin: 0 0 15px 0;
+}
+
+.accordion__title {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.accordion__title h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.accordion__content {
+    display: none;
+    padding: 10px;
+}
