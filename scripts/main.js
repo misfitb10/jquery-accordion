@@ -11,12 +11,14 @@
 
             if ($accordionTitle.length) {
                 $accordionTitle.on('click', function() {
-                    if ( $(this).parent().hasClass(settings.activeClass) ) {
-                        $(this).parent().removeClass(settings.activeClass);
-                        $(this).next(settings.accordionContent).slideUp();
+                    var $thisItem = $(this);
+
+                    if ($thisItem.parent().hasClass(settings.activeClass)) {
+                        $thisItem.parent().removeClass(settings.activeClass);
+                        $thisItem.next(settings.accordionContent).slideUp();
                     } else {
-                        $(this).parent().addClass(settings.activeClass);
-                        $(this).next(settings.accordionContent).slideDown();
+                        $thisItem.parent().addClass(settings.activeClass);
+                        $thisItem.next(settings.accordionContent).slideDown();
                     }
                 })
             } else {
@@ -24,14 +26,12 @@
             }
         })
     };
-}(jQuery));
+})(jQuery);
 
-$(document).ready(function() {
+$(function() {
     $('.accordion__container').accordion({
         activeClass: '_is_active',
         accordionTrigger: '.accordion__title',
         accordionContent: '.accordion__content'
     });
 });
-
-
